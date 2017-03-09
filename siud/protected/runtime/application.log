@@ -1,0 +1,150 @@
+2017/03/07 14:11:39 [error] [exception.CException] CException: CAssetManager.basePath "D:\xampp\htdocs\pusilkom\cms\assets" is invalid. Please make sure the directory exists and is writable by the Web server process. in D:\xampp\htdocs\pusilkom\framework\web\CAssetManager.php:138
+Stack trace:
+#0 D:\xampp\htdocs\pusilkom\framework\web\CAssetManager.php(123): CAssetManager->setBasePath('D:\\xampp\\htdocs...')
+#1 D:\xampp\htdocs\pusilkom\framework\web\CAssetManager.php(217): CAssetManager->getBasePath()
+#2 D:\xampp\htdocs\pusilkom\framework\web\CClientScript.php(511): CAssetManager->publish('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\pusilkom\framework\web\CClientScript.php(548): CClientScript->getCoreScriptUrl()
+#4 D:\xampp\htdocs\pusilkom\framework\web\CClientScript.php(349): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\xampp\htdocs\pusilkom\framework\web\CClientScript.php(208): CClientScript->renderCoreScripts()
+#6 D:\xampp\htdocs\pusilkom\framework\web\CController.php(351): CClientScript->render('<!DOCTYPE html>...')
+#7 D:\xampp\htdocs\pusilkom\framework\web\CController.php(788): CController->processOutput('<!DOCTYPE html>...')
+#8 D:\xampp\htdocs\pusilkom\cms\protected\controllers\SiteController.php(99): CController->render('login', Array)
+#9 D:\xampp\htdocs\pusilkom\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 D:\xampp\htdocs\pusilkom\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\xampp\htdocs\pusilkom\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\xampp\htdocs\pusilkom\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\xampp\htdocs\pusilkom\framework\web\CWebApplication.php(282): CController->run('login')
+#14 D:\xampp\htdocs\pusilkom\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 D:\xampp\htdocs\pusilkom\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\pusilkom\cms\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/pusilkom/cms/index.php?r=site/login
+HTTP_REFERER=http://localhost/pusilkom/cms/
+---
+2017/03/07 14:11:50 [error] [exception.CException] CException: CAssetManager.basePath "D:\xampp\htdocs\pusilkom\cms\assets" is invalid. Please make sure the directory exists and is writable by the Web server process. in D:\xampp\htdocs\pusilkom\framework\web\CAssetManager.php:138
+Stack trace:
+#0 D:\xampp\htdocs\pusilkom\framework\web\CAssetManager.php(123): CAssetManager->setBasePath('D:\\xampp\\htdocs...')
+#1 D:\xampp\htdocs\pusilkom\framework\web\CAssetManager.php(217): CAssetManager->getBasePath()
+#2 D:\xampp\htdocs\pusilkom\framework\web\CClientScript.php(511): CAssetManager->publish('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\pusilkom\framework\web\CClientScript.php(548): CClientScript->getCoreScriptUrl()
+#4 D:\xampp\htdocs\pusilkom\framework\web\CClientScript.php(349): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\xampp\htdocs\pusilkom\framework\web\CClientScript.php(208): CClientScript->renderCoreScripts()
+#6 D:\xampp\htdocs\pusilkom\framework\web\CController.php(351): CClientScript->render('<!DOCTYPE html>...')
+#7 D:\xampp\htdocs\pusilkom\framework\web\CController.php(788): CController->processOutput('<!DOCTYPE html>...')
+#8 D:\xampp\htdocs\pusilkom\cms\protected\controllers\SiteController.php(99): CController->render('login', Array)
+#9 D:\xampp\htdocs\pusilkom\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 D:\xampp\htdocs\pusilkom\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\xampp\htdocs\pusilkom\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\xampp\htdocs\pusilkom\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\xampp\htdocs\pusilkom\framework\web\CWebApplication.php(282): CController->run('login')
+#14 D:\xampp\htdocs\pusilkom\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 D:\xampp\htdocs\pusilkom\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\pusilkom\cms\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/pusilkom/cms/index.php?r=site/login
+---
+2017/03/08 10:37:58 [error] [php] include(BLAuthorization.php): failed to open stream: No such file or directory (D:\xampp\htdocs\pusilkom\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\xampp\htdocs\pusilkom\cms\protected\components\UserIdentity.php(33): spl_autoload_call()
+#1 D:\xampp\htdocs\pusilkom\cms\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 D:\xampp\htdocs\pusilkom\framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#3 D:\xampp\htdocs\pusilkom\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute()
+#4 D:\xampp\htdocs\pusilkom\framework\base\CModel.php(159): CInlineValidator->validate()
+#5 D:\xampp\htdocs\pusilkom\cms\protected\controllers\SiteController.php(96): LoginForm->validate()
+#6 D:\xampp\htdocs\pusilkom\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 D:\xampp\htdocs\pusilkom\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\xampp\htdocs\pusilkom\framework\web\CController.php(286): SiteController->runAction()
+#9 D:\xampp\htdocs\pusilkom\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 D:\xampp\htdocs\pusilkom\framework\web\CWebApplication.php(282): SiteController->run()
+#11 D:\xampp\htdocs\pusilkom\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\xampp\htdocs\pusilkom\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\xampp\htdocs\pusilkom\cms\index.php(13): CWebApplication->run()
+REQUEST_URI=/pusilkom/cms/index.php?r=site/login
+in D:\xampp\htdocs\pusilkom\cms\protected\components\UserIdentity.php (33)
+in D:\xampp\htdocs\pusilkom\cms\protected\models\LoginForm.php (52)
+in D:\xampp\htdocs\pusilkom\cms\protected\controllers\SiteController.php (96)
+2017/03/09 17:29:25 [error] [exception.CDbException] exception 'CDbException' with message 'The table "user" for active record class "User" cannot be found in the database.' in F:\xampp\htdocs\portfolio\siud\framework\db\ar\CActiveRecord.php:2387
+Stack trace:
+#0 F:\xampp\htdocs\portfolio\siud\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#1 F:\xampp\htdocs\portfolio\siud\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 F:\xampp\htdocs\portfolio\siud\siud\protected\controllers\SiteController.php(81): CActiveRecord->__construct()
+#3 F:\xampp\htdocs\portfolio\siud\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\xampp\htdocs\portfolio\siud\framework\web\CWebApplication.php(282): CController->run('login')
+#8 F:\xampp\htdocs\portfolio\siud\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#9 F:\xampp\htdocs\portfolio\siud\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\xampp\htdocs\portfolio\siud\siud\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/portfolio/siud/siud/index.php?r=site/login
+HTTP_REFERER=http://localhost/portfolio/siud/siud/
+---
+2017/03/09 17:31:58 [error] [php] include(User.php): failed to open stream: No such file or directory (F:\xampp\htdocs\portfolio\siud\framework\YiiBase.php:432)
+Stack trace:
+#0 F:\xampp\htdocs\portfolio\siud\siud\protected\controllers\SiteController.php(81): spl_autoload_call()
+#1 F:\xampp\htdocs\portfolio\siud\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#2 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(286): SiteController->runAction()
+#4 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 F:\xampp\htdocs\portfolio\siud\framework\web\CWebApplication.php(282): SiteController->run()
+#6 F:\xampp\htdocs\portfolio\siud\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 F:\xampp\htdocs\portfolio\siud\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 F:\xampp\htdocs\portfolio\siud\siud\index.php(13): CWebApplication->run()
+REQUEST_URI=/portfolio/siud/siud/index.php?r=site/login
+in F:\xampp\htdocs\portfolio\siud\siud\protected\controllers\SiteController.php (81)
+in F:\xampp\htdocs\portfolio\siud\siud\index.php (13)
+2017/03/09 18:16:45 [error] [exception.CException] exception 'CException' with message 'RuanganController contains improperly nested widget tags in its view "F:\xampp\htdocs\portfolio\siud\siud\themes\insp\views/ruangan\pinjamRuangan.php". A CActiveForm widget does not have an endWidget() call.' in F:\xampp\htdocs\portfolio\siud\framework\web\CBaseController.php:101
+Stack trace:
+#0 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(869): CBaseController->renderFile('F:\\xampp\\htdocs...', Array, true)
+#1 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(782): CController->renderPartial('pinjamRuangan', Array, true)
+#2 F:\xampp\htdocs\portfolio\siud\siud\protected\controllers\RuanganController.php(15): CController->render('pinjamRuangan', Array)
+#3 F:\xampp\htdocs\portfolio\siud\framework\web\actions\CInlineAction.php(49): RuanganController->actionPinjamRuangan()
+#4 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\xampp\htdocs\portfolio\siud\framework\web\CWebApplication.php(282): CController->run('pinjamRuangan')
+#8 F:\xampp\htdocs\portfolio\siud\framework\web\CWebApplication.php(141): CWebApplication->runController('ruangan/pinjamR...')
+#9 F:\xampp\htdocs\portfolio\siud\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 F:\xampp\htdocs\portfolio\siud\siud\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/portfolio/siud/siud/index.php?r=ruangan/pinjamRuangan
+---
+2017/03/09 18:22:59 [error] [exception.CException] exception 'CException' with message 'Property "TranPeminjamanRuangan.datecolumn_name" is not defined.' in F:\xampp\htdocs\portfolio\siud\framework\base\CComponent.php:130
+Stack trace:
+#0 F:\xampp\htdocs\portfolio\siud\framework\db\ar\CActiveRecord.php(145): CComponent->__get('datecolumn_name')
+#1 F:\xampp\htdocs\portfolio\siud\siud\themes\insp\views\ruangan\PinjamRuangan.php(34): CActiveRecord->__get('datecolumn_name')
+#2 F:\xampp\htdocs\portfolio\siud\framework\web\CBaseController.php(126): require('F:\\xampp\\htdocs...')
+#3 F:\xampp\htdocs\portfolio\siud\framework\web\CBaseController.php(95): CBaseController->renderInternal('F:\\xampp\\htdocs...', Array, true)
+#4 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(869): CBaseController->renderFile('F:\\xampp\\htdocs...', Array, true)
+#5 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(782): CController->renderPartial('pinjamRuangan', Array, true)
+#6 F:\xampp\htdocs\portfolio\siud\siud\protected\controllers\RuanganController.php(15): CController->render('pinjamRuangan', Array)
+#7 F:\xampp\htdocs\portfolio\siud\framework\web\actions\CInlineAction.php(49): RuanganController->actionPinjamRuangan()
+#8 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 F:\xampp\htdocs\portfolio\siud\framework\web\CWebApplication.php(282): CController->run('pinjamRuangan')
+#12 F:\xampp\htdocs\portfolio\siud\framework\web\CWebApplication.php(141): CWebApplication->runController('ruangan/pinjamR...')
+#13 F:\xampp\htdocs\portfolio\siud\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 F:\xampp\htdocs\portfolio\siud\siud\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/portfolio/siud/siud/index.php?r=ruangan/pinjamRuangan
+---
+2017/03/09 18:26:22 [error] [php] strtotime() expects parameter 2 to be long, string given (F:\xampp\htdocs\portfolio\siud\siud\themes\insp\views\ruangan\PinjamRuangan.php:34)
+Stack trace:
+#0 F:\xampp\htdocs\portfolio\siud\framework\web\CBaseController.php(95): RuanganController->renderInternal()
+#1 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(869): RuanganController->renderFile()
+#2 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(782): RuanganController->renderPartial()
+#3 F:\xampp\htdocs\portfolio\siud\siud\protected\controllers\RuanganController.php(15): RuanganController->render()
+#4 F:\xampp\htdocs\portfolio\siud\framework\web\actions\CInlineAction.php(49): RuanganController->actionPinjamRuangan()
+#5 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(286): RuanganController->runAction()
+#7 F:\xampp\htdocs\portfolio\siud\framework\web\CController.php(265): RuanganController->runActionWithFilters()
+#8 F:\xampp\htdocs\portfolio\siud\framework\web\CWebApplication.php(282): RuanganController->run()
+#9 F:\xampp\htdocs\portfolio\siud\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 F:\xampp\htdocs\portfolio\siud\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 F:\xampp\htdocs\portfolio\siud\siud\index.php(13): CWebApplication->run()
+REQUEST_URI=/portfolio/siud/siud/index.php?r=ruangan/pinjamRuangan
+in F:\xampp\htdocs\portfolio\siud\siud\themes\insp\views\ruangan\PinjamRuangan.php (34)
+in F:\xampp\htdocs\portfolio\siud\siud\protected\controllers\RuanganController.php (15)
+in F:\xampp\htdocs\portfolio\siud\siud\index.php (13)
